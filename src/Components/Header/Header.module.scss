@@ -1,0 +1,52 @@
+.header {
+}
+
+.up {
+  padding: 8px 0;
+  background: #060f42;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.item {
+    &:first-child {
+        cursor: pointer;
+    }
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  color: #f4f8fb;
+  cursor: pointer;
+  text-decoration: none;
+  span {
+    display: block;
+  }
+}
+
+.noactive {
+  opacity: 0.5;
+}
+
+.down {
+}

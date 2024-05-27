@@ -1,0 +1,154 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: -424px;
+  bottom: 0;
+  width: 1005px;
+  max-width: 424px;
+  padding: 30px;
+  background-color: #060f42;
+  transition: all 0.2s ease;
+}
+
+.menu__on {
+  left: 0;
+}
+
+.up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.logoLink {
+  display: block;
+  text-decoration: none;
+}
+
+.logo {
+}
+
+.close {
+  cursor: pointer;
+}
+
+.down {
+}
+
+.vxodReg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #d9d9d9;
+  button {
+    display: block;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #d9d9d9;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.informatsiya,
+.service {
+  position: relative;
+}
+
+.informatsiya__box,
+.service__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #d9d9d9;
+}
+
+.arrow {
+  rotate: 180deg;
+  transition: all 0.2s ease;
+}
+
+.arrowCheck {
+  position: absolute;
+  left: -100%;
+}
+
+.arrowCheck:checked ~ .informatsiya__box > .arrow__off {
+  rotate: 0deg;
+}
+
+.arrowCheck:checked ~ .service__box > .arrow__off {
+  rotate: 0deg;
+}
+
+.list {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transition: all 0.4s ease;
+}
+
+.arrowCheck:checked ~ .list {
+  display: flex;
+  transition: all 0.4s ease;
+}
+
+.item {
+}
+
+.text {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: #d9d9d9;
+}
+
+.contact {
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact__item {
+}
+
+.contact__text {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: #d9d9d9;
+}
+
+.contact__tel {
+  display: inline-block;
+  text-decoration: none;
+  color: #d9d9d9;
+}

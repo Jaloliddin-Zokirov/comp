@@ -23,9 +23,9 @@
 }
 
 .item {
-    &:first-child {
-        cursor: pointer;
-    }
+  &:first-child {
+    cursor: pointer;
+  }
 }
 
 .text {
@@ -49,4 +49,53 @@
 }
 
 .down {
+  padding: 24px 0;
+  box-shadow: 0px 4px 4px 0px #0000000f;
+}
+
+.down__list {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.down__item {
+  position: relative;
+  width: 100%;
+  &:nth-child(4) {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+.logo {
+}
+
+.catalog {
+}
+
+.search {
+  width: 100%;
+  max-width: 758px;
+}
+
+.tel__number {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #060f42;
+  text-decoration: none;
+}
+
+.tel__numberImg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
